@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>AluraBooks</title>
+</head>
+<body>
+    <!-- 
+    medias queries:
+        . desktop 1728
+        . tablet 1024
+        . smartphone 428 
+    -->
+    <div class="wrapper">
+        <header> 
+            <nav>
+                <div class="nav__menu">
+                    <img src="assets/images/Menu.svg" alt="Menu hamburguer ícone">
+                    <a href="index.html">
+                        <img src="assets/images/Logo.svg" alt="AluraBook logo">
+                    </a>
+                </div>
+                <div class="nav__icons">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/Favoritos.svg" alt="Favoritos ícone">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/Compras.svg" alt="Compras ícone">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/Usuario.svg" alt="Usuário ícone">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+         
+        <!-- top/first section -->
+        <section class="search bg-gradient">
+            <h2 class="search__title">
+                Já sabe por onde começar?
+            </h2>
+            <p class="search__text">
+                Encontre em nossa estante o que precisa para seu desenvolvimento!
+            </p>
+            <div class="search__input">
+                <input type="search" name="search" id="idSearch" placeholder="Qual será sua próxima leitura?" maxlength="30">
+                <img src="assets/images/Pesquisa.svg" alt="Pesquisa ícone">
+            </div>            
+        </section>
+
+        <!-- second section -->
+        <section class="swiper-card">
+            <div class="swiper-card__header">
+                <h2 class="swiper-card__header__title">
+                    Últimos lançamentos
+                </h2>
+            </div>
+
+            <div class="swiper-wrapper">
+                <div class="swiper-wrapper__bullets">
+                    <div class="swiper-wrapper__bullets__bullet"></div>
+                    <div class="swiper-wrapper__bullets__bullet swiper-wrapper__bullets__bullet--active"></div>
+                    <div class="swiper-wrapper__bullets__bullet"></div>
+                    <div class="swiper-wrapper__bullets__bullet"></div>
+                </div>
+                <div class="swiper-wrapper__swiper">
+                    <div class="swiper-wrapper__swiper__item">
+                        <img src="assets/images/lancamento01.png" alt="">
+                    </div>
+                    <div class="swiper-wrapper__swiper__item">
+                        <img src="assets/images/lancamento02.png" alt="">
+                    </div>
+                    <div class="swiper-wrapper__swiper__item">
+                        <img src="assets/images/lancamento03.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="card-wrapper__card">
+                    <div class="card-wrapper__card__text">
+                        <h2>
+                            Talvez você também se interesse por...
+                        </h2>
+                        <h3>
+                            Angular 11 e Firebase
+                        </h3>
+                        <p>
+                            Construindo uma aplicação integrada com a plataforma do Google.
+                        </p>
+                        <div class="card-wrapper__card__text__icons">
+                            <a href="#">
+                                <img src="assets/images/Favoritos.svg" alt="favorito icon">
+                            </a>
+                            <a href="#">
+                                <img src="assets/images/Compras.svg" alt="compras icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-wrapper__card__visual">
+                        <img src="assets/images/Angular.png" alt="Angular logo">
+                        <a href="#">
+                            Saiba mais
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- third section -->
+        <section class="swiper-card">
+            <div class="swiper-card__header">
+                <h2 class="swiper-card__header__title">
+                    Mais vendidos
+                </h2>
+            </div>
+
+            <div class="swiper-wrapper">
+                <div class="swiper-wrapper__bullets">
+                    <div class="swiper-wrapper__bullets__bullet"></div>
+                    <div class="swiper-wrapper__bullets__bullet"></div>
+                    <div class="swiper-wrapper__bullets__bullet swiper-wrapper__bullets__bullet--active"></div>
+                    <div class="swiper-wrapper__bullets__bullet"></div>
+                </div>
+                <div class="swiper-wrapper__swiper">
+                    <div class="swiper-wrapper__swiper__item">
+                        <img src="assets/images/lancamento03.png" alt="">
+                    </div>
+                    <div class="swiper-wrapper__swiper__item">
+                        <img src="assets/images/lancamento01.png" alt="">
+                    </div>
+                    <div class="swiper-wrapper__swiper__item">
+                        <img src="assets/images/lancamento02.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-wrapper">
+                <div class="card-wrapper__card">
+                    <div class="card-wrapper__card__text">
+                        <h2>
+                            * * * * * <br>Autora do mês
+                        </h2>
+                        <h3>
+                            Juliana Agarikov
+                        </h3>
+                        <p>
+                            Analista de sistemas e escritora, Juliana é especialista em Front-End. 
+                        </p>
+                        <div class="card-wrapper__card__text__icons">
+                            <a href="#">
+                                <img src="assets/images/Favoritos.svg" alt="favorito icon">
+                            </a>
+                            <a href="#">
+                                <img src="assets/images/Compras.svg" alt="compras icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-wrapper__card__visual">
+                        <img src="assets/images/Perfil-escritora01.png" alt="Angular logo">
+                        <a href="#">
+                            Saiba mais
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- fourth section -->
+        <section class="recently-visited bg-gradient">
+            <h2 class="recently-visited__title">
+                TÓPICOS VISITADOS RECENTEMENTE
+            </h2>
+            <div class="recently-visited__items">
+                <div class="recently-visited__item">
+                    Android
+                </div>
+                <div class="recently-visited__item">
+                    Marketing Digital
+                </div>
+                <div class="recently-visited__item">
+                    Agile
+                </div>
+                <div class="recently-visited__item">
+                    Startups
+                </div>
+                <div class="recently-visited__item">
+                    HTML & CSS
+                </div>
+                <div class="recently-visited__item">
+                    Python
+                </div>
+                <div class="recently-visited__item">
+                    OO
+                </div>
+                <div class="recently-visited__item">
+                    Java
+                </div>
+            </div>
+        </section>
+
+        <!-- fifth section -->
+        <section class="news">
+            <h2 class="news__title">
+                Fique por dentro das novidades!
+            </h2>
+            <p class="news__text">
+                Atualizações de e-books, novos livros, promoções e outros.
+            </p>
+            <div class="news__input">
+                <input type="email" name="email" id="idEmail" placeholder="Cadastre seu e-mail">
+                <img src="assets/images/Vector.svg" alt="Email ícone">
+            </div>
+        </section>
+        
+        <footer>
+            <a href="#">Grupo Alura</a>
+        </footer>
+    </div>
+    
+</body>
+</html>
