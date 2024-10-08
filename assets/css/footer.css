@@ -1,0 +1,10 @@
+/* RODAPE */
+footer {
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    border-top: 1px solid #858585;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}

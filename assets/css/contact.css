@@ -1,0 +1,49 @@
+/* FIQUE POR DENTRO DAS NOVIDADES */
+.contact {
+    padding: 1.5rem;
+    color: var(--color-bg-gradient-primary);
+}
+
+.contact__title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+.contact__text {
+    font-weight: 300;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact__input {
+    position: relative;
+    max-width: 328px;
+}
+
+.contact__input input {
+    width: 88%;
+    padding: .625rem 0 .625rem 3rem;
+    color: var(--color-font-secondary);
+    font-size: 1rem;
+    font-weight: 400;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid var(--color-bg-gradient-primary);
+    border-radius: 1.5rem;
+}
+
+.contact__input input:focus {
+    outline: 2px solid rgba(0, 47, 82, 0.4);
+}
+
+.contact__input input::placeholder {
+    color: var(--color-font-secondary);
+    font-family: "Poppins", sans-serif;
+}
+
+.contact__input img {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+}
