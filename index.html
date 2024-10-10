@@ -22,7 +22,7 @@
             <nav>
                 <div class="container nav-logo">
                     <div class="nav-logo__mobile">
-                        <input class="menu-button" type="checkbox" name="Menu" id="menu">
+                        <input class="menu-button" type="checkbox" name="menu" id="menu">
                         <label for="menu">
                             <img src="assets/images/Menu.svg" alt="Menu hamburguer ícone">
                         </label>
@@ -60,7 +60,27 @@
                 </div>
 
                 <div class="container nav-menu">
-                    <a href="#">Categorias</a>
+                    <input class="menu-button-desk" type="checkbox" name="menu-desk" id="menu-desk">
+                    <label for="menu-desk">
+                        Categorias
+                    </label>
+                    <ul class="menu-content">
+                        <li class="menu-content__item">
+                            <a href="#">Programação</a>
+                        </li>
+                        <li class="menu-content__item">
+                            <a href="#">Front-end</a>
+                        </li>
+                        <li class="menu-content__item">
+                            <a href="#">Infraestrutura</a>
+                        </li>
+                        <li class="menu-content__item">
+                            <a href="#">Business</a>
+                        </li>
+                        <li class="menu-content__item">
+                            <a href="#">Design & UX</a>
+                        </li>
+                    </ul>
                     <a href="#">Favoritos</a>
                     <a href="#">Minha estante</a>
                 </div>
@@ -99,66 +119,67 @@
                     Últimos lançamentos
                 </h2>
             </div>
+            <div class="content-wrapper">
+                <div class="swiper">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
 
-            <!-- Slider main container -->
-            <div class="swiper">
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <img src="assets/images/Portugol.svg" alt="Livro sobre Portugol">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/images/Tuning.svg" alt="Livro sobre Tuning">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/images/ApacheKafka.svg" alt="Livro sobre Apache Kafta">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/images/Arquitetura.svg" alt="Livro sobre Arquitetura de Software">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/images/Javascript.svg" alt="Livro sobre Javascript">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/images/Nodejs.svg" alt="Livro sobre NodeJS">
-                    </div>
-                </div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-
-            <div class="card-wrapper">
-                <div class="card-wrapper__card">
-                    <div class="card-wrapper__card__container">
-                        <h3>
-                            Talvez você também se interesse por...
-                        </h3>
-                        <h2>
-                            Angular 11 e Firebase
-                        </h2>
-                        <p>
-                            Construindo uma aplicação integrada com a plataforma do Google.
-                        </p>
-                        <div class="card-wrapper__card__container__icons">
-                            <a href="#">
-                                <img src="assets/images/Favoritos.svg" alt="favorito icon">
-                            </a>
-                            <a href="#">
-                                <img src="assets/images/Compras.svg" alt="compras icon">
-                            </a>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="assets/images/Portugol.svg" alt="Livro sobre Portugol">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/Tuning.svg" alt="Livro sobre Tuning">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/ApacheKafka.svg" alt="Livro sobre Apache Kafta">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/Arquitetura.svg" alt="Livro sobre Arquitetura de Software">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/Javascript.svg" alt="Livro sobre Javascript">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/Nodejs.svg" alt="Livro sobre NodeJS">
                         </div>
                     </div>
-                    <div class="card-wrapper__card__container">
-                        <img src="assets/images/Angular.png" alt="Angular logo">
-                        <a href="#">
-                            Saiba mais
-                        </a>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <div class="card__container">
+                            <div class="card__container__text">
+                                <h3>
+                                    Talvez você também se interesse por...
+                                </h3>
+                                <h2>
+                                    Angular 11 e Firebase
+                                </h2>
+                                <p>
+                                    Construindo uma aplicação integrada com a plataforma do Google.
+                                </p>
+                            </div>
+                            <div class="card__container__icons">
+                                <a href="#">
+                                    <img src="assets/images/Favoritos.svg" alt="favorito icon">
+                                </a>
+                                <a href="#">
+                                    <img src="assets/images/Compras.svg" alt="compras icon">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card__container">
+                            <img src="assets/images/Angular.png" alt="Angular logo">
+                            <a href="#">
+                                Saiba mais
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -170,118 +191,213 @@
                     Mais vendidos
                 </h2>
             </div>
+            <div class="content-wrapper">
+                <div class="swiper">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
 
-            <!-- Slider main container -->
-            <div class="swiper">
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <img src="assets/images/Javascript.svg" alt="Livro sobre Javascript">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/images/Arquitetura.svg" alt="Livro sobre Arquitetura de Software">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/images/Nodejs.svg" alt="Livro sobre NodeJS">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/images/ApacheKafka.svg" alt="Livro sobre Apache Kafta">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/images/Portugol.svg" alt="Livro sobre Portugol">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="assets/images/Tuning.svg" alt="Livro sobre Tuning">
-                    </div>
-                </div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-
-            <div class="card-wrapper">
-                <div class="card-wrapper__card">
-                    <div class="card-wrapper__card__container">
-                        <h3>
-                            * * * * * <br>Autora do mês
-                        </h3>
-                        <h2>
-                            Juliana Agarikov
-                        </h2>
-                        <p>
-                            Analista de sistemas e escritora, Juliana é especialista em Front-End.
-                        </p>
-                        <div class="card-wrapper__card__container__icons">
-                            <a href="#">
-                                <img src="assets/images/Favoritos.svg" alt="favorito icon">
-                            </a>
-                            <a href="#">
-                                <img src="assets/images/Compras.svg" alt="compras icon">
-                            </a>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="assets/images/Javascript.svg" alt="Livro sobre Javascript">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/Arquitetura.svg" alt="Livro sobre Arquitetura de Software">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/Nodejs.svg" alt="Livro sobre NodeJS">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/ApacheKafka.svg" alt="Livro sobre Apache Kafta">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/Portugol.svg" alt="Livro sobre Portugol">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/Tuning.svg" alt="Livro sobre Tuning">
                         </div>
                     </div>
-                    <div class="card-wrapper__card__container">
-                        <img src="assets/images/Perfil-escritora01.png" alt="Angular logo">
-                        <a href="#">
-                            Saiba mais
-                        </a>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <div class="card__container">
+                            <div class="card__container__text">
+                                <h3>
+                                    * * * * * <br>Autora do mês
+                                </h3>
+                                <h2>
+                                    Juliana Agarikov
+                                </h2>
+                                <p>
+                                    Analista de sistemas e escritora, Juliana é especialista em Front-End.
+                                </p>
+                            </div>
+                            <div class="card__container__icons">
+                                <a href="#">
+                                    <img src="assets/images/Favoritos.svg" alt="favorito icon">
+                                </a>
+                                <a href="#">
+                                    <img src="assets/images/Compras.svg" alt="compras icon">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card__container">
+                            <img src="assets/images/Perfil-escritora01.png" alt="Angular logo">
+                            <a href="#">
+                                Saiba mais
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="recently-visited bg-gradient">
-            <h2 class="recently-visited__title">
-                TÓPICOS VISITADOS RECENTEMENTE
-            </h2>
-            <div class="recently-visited__items">
-                <div class="recently-visited__item">
-                    <a href="">Android</a>
-                </div>
-                <div class="recently-visited__item">
-                    <a href="">Marketing Digital</a>
-                </div>
-                <div class="recently-visited__item">
-                    <a href="">Agile</a>
-                </div>
-                <div class="recently-visited__item">
-                    <a href="">Startups</a>
-                </div>
-                <div class="recently-visited__item">
-                    <a href="">HTML & CSS</a>
-                </div>
-                <div class="recently-visited__item">
-                    <a href="">Python</a>
-                </div>
-                <div class="recently-visited__item">
-                    <a href="">OO</a>
-                </div>
-                <div class="recently-visited__item">
-                    <a href="">Java</a>
+            <div class="content-wrapper">
+                <h2 class="recently-visited__title">
+                    TÓPICOS VISITADOS RECENTEMENTE
+                </h2>
+                <div class="recently-visited__items">
+                    <div class="recently-visited__item">
+                        <a href="">Android</a>
+                    </div>
+                    <div class="recently-visited__item">
+                        <a href="">Marketing Digital</a>
+                    </div>
+                    <div class="recently-visited__item">
+                        <a href="">Agile</a>
+                    </div>
+                    <div class="recently-visited__item">
+                        <a href="">Startups</a>
+                    </div>
+                    <div class="recently-visited__item">
+                        <a href="">HTML & CSS</a>
+                    </div>
+                    <div class="recently-visited__item">
+                        <a href="">Python</a>
+                    </div>
+                    <div class="recently-visited__item">
+                        <a href="">OO</a>
+                    </div>
+                    <div class="recently-visited__item">
+                        <a href="">Java</a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="contact">
-            <h2 class="contact__title">
-                Fique por dentro das novidades!
-            </h2>
-            <p class="contact__text">
-                Atualizações de e-books, novos livros, promoções e outros.
-            </p>
-            <div class="contact__input">
-                <input type="email" name="email" id="idEmail" placeholder="Cadastre seu e-mail" maxlength="32">
-                <img src="assets/images/Vector.svg" alt="Email ícone">
+            <div class="content-wrapper contact-wrapper">
+                <div class="contact__content">
+                    <h2 class="contact__title">
+                        Fique por dentro das novidades!
+                    </h2>
+                    <p class="contact__text">
+                        Atualizações de e-books, novos livros, promoções e outros.
+                    </p>
+                </div>
+                <div class="contact__input">
+                    <input type="email" name="email" id="idEmail" placeholder="Cadastre seu e-mail" maxlength="32">
+                    <img src="assets/images/Vector.svg" alt="Email ícone">
+                </div>
             </div>
         </section>
 
         <footer>
-            <a href="#">Grupo Alura</a>
+            <div class="footer-content">
+                <div class="footer-container footer-mobile">
+                    <a href="#" class="footer-title">Grupo Alura</a>
+                </div>
+                <div class="footer-container">
+                    <div class="footer-subtitle">
+                        Educação
+                    </div>
+                    <ul class="footer-list">
+                        <li class="footer-list__item">
+                            <img src="assets/images/ft-caelum.svg" alt="Caelum">
+                            <a href="#">Caelum</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <img src="assets/images/ft-casadocodigo.svg" alt="Casa do Código">
+                            <a href="#">Casa do Código</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-container">
+                    <div class="footer-subtitle">
+                        Educação online
+                    </div>
+                    <ul class="footer-list">
+                        <li class="footer-list__item">
+                            <img src="assets/images/ft-alura.svg" alt="Alura">
+                            <a href="#">Alura</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <img src="assets/images/ft-aluraempresas.svg" alt="Alura Para Empresas">
+                            <a href="#">Alura Para Empresas</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <img src="assets/images/ft-alura.svg" alt="Alura Latam">
+                            <a href="#">Alura Latam</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <img src="assets/images/ft-alurastart.svg" alt="Alura Start">
+                            <a href="#">Alura Start</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <img src="assets/images/ft-musicdot.svg" alt="MusicDot">
+                            <a href="#">MusicDot</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <img src="assets/images/ft-aluralingua.svg" alt="Alura Língua">
+                            <a href="#">Alura Língua</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <img src="assets/images/ft-pm3.svg" alt="PM3">
+                            <a href="#">PM3</a>
+                        </li>
+                </div>
+                <div class="footer-container">
+                    <div class="footer-subtitle">
+                        Comunidade
+                    </div>
+                    <ul class="footer-list">
+                        <li class="footer-list__item">
+                            <img src="assets/images/ft-hipsterstech.svg" alt="Hipsters ponto Tech">
+                            <a href="#">Hipsters ponto Tech</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <img src="assets/images/ft-scubadev.svg" alt="Scuba Dev">
+                            <a href="#">Scuba Dev</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <img src="assets/images/ft-layerstech.svg" alt="Layers ponto Tech">
+                            <a href="#">Layers ponto Tech</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <img src="assets/images/ft-likeaboss.svg" alt="Like a Boss">
+                            <a href="#">Like a Boss</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <img src="assets/images/ft-carreirasemfronteira.svg" alt="Carreira sem Fronteira">
+                            <a href="#">Carreira sem Fronteira</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <img src="assets/images/ft-hipsterjobs.svg" alt="Hipsters ponto Jobs">
+                            <a href="#">Hipsters ponto Jobs</a>
+                        </li>
+                        <li class="footer-list__item">
+                            <img src="assets/images/ft-guj.svg" alt="GUJ">
+                            <a href="#">GUJ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </footer>
     </div>
 
@@ -312,10 +428,9 @@
                     spaceBetween: 16
                 },
                 // when window width is >= 640px
-                // 640: {
-                //     slidesPerView: 4,
-                //     spaceBetween: 32,
-                // }
+                1024: {
+                    spaceBetween: 74,
+                }
             },
 
             // If we need pagination

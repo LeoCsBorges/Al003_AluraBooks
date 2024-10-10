@@ -1,12 +1,13 @@
 /* ULTIMOS LANCAMENTOS & MAIS VENDIDOS*/
 .swiper-card {
-    overflow-x: hidden;
+    background-color: var(--color-bg-section);
     margin-bottom: 1.5rem;
 }
 
 .swiper-card__header {
     text-align: center;
     padding-bottom: .5rem;
+    background-color: var(--color-bg-body);
 }
 
 .swiper-card__header__title {
@@ -17,11 +18,8 @@
     color: var(--color-font-primary);
 }
 
-/* carousel */
-.swiper {
-    background-color: var(--color-bg-section);
-}
 
+/* carousel */
 .swiper-slide img {
     width: 100%;
     user-select: none;
@@ -33,19 +31,30 @@
     margin-block: .5rem;
 }
 
+.swiper-pagination-bullet-active {
+    background-color: var(--color-font-secondary);
+}
+
 .swiper-button-prev,
 .swiper-button-next {
     display: none;
+    color: var(--color-font-base);
+    padding: .25rem;
+    border-radius: 20%;
+    background-color: var(--color-font-secondary);
+    opacity: .75;
+    user-select: none;
 }
 
 
 /* card */
 .card-wrapper {
     padding: 1rem;
-    background-color: var(--color-bg-section);
 }
 
-.card-wrapper__card {
+.card {
+    max-width: 588px;
+    margin: auto;
     padding: 1rem;
     line-height: 1.5rem;
     background-color: var(--color-bg-body);
@@ -56,39 +65,45 @@
     gap: 1rem;
 }
 
-.card-wrapper__card__container {
+.card__container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: .875rem;
 }
 
-.card-wrapper__card__container h3 {
+.card__container__text {
+    display: flex;
+    flex-direction: column;
+    gap: .875rem;
+}
+
+.card__container__text h3 {
     font-weight: 700;
     color: var(--color-font-primary);
 }
 
-.card-wrapper__card__container h2 {
+.card__container__text h2 {
     font-size: 1.25rem;
     font-weight: 700;
     color: var(--color-font-secondary);
 }
 
-.card-wrapper__card__container p {
+.card__container__text p {
     font-size: .875rem;
     font-weight: 400;
 }
 
-.card-wrapper__card__container__icons {
+.card__container__icons {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
 }
 
-.card-wrapper__card__text__icons a {
+.card__text__icons a {
     padding: .5rem;
 }
 
-.card-wrapper__card__container > a {
+.card__container>a {
     display: block;
     padding-block: 1rem;
     text-decoration: none;
@@ -98,6 +113,44 @@
     background-color: var(--color-bg-button);
 }
 
-.card-wrapper__card__container > img {
+.card__container>img {
     max-width: 100%;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .swiper-card__header__title {
+        font-size: 1.625rem;
+        margin-bottom: .5rem;
+    }
+
+    .swiper-pagination {
+        margin-block: 2rem 1rem;
+    }
+
+    .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+    }
+
+    .swiper-wrapper {
+        padding-block: 3rem;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: block;
+    }
+
+    .card-wrapper {
+        padding: 3rem;
+    }
+
+    .card {
+        gap: 5rem;
+    }
+
+    .card__container__text {
+        gap: .5rem;
+    }
 }

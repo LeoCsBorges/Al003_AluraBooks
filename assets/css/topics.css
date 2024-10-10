@@ -29,3 +29,22 @@
     font-size: .875rem;
     font-weight: 700;
 }
+
+@media screen and (min-width: 1024px) {
+    .recently-visited {
+        padding-block: 2rem;
+    }
+
+    .recently-visited__title {
+        font-size: 1.5rem;
+    }
+
+    .recently-visited__item a {
+        padding: 1.5rem 2rem;
+        font-size: 1.5rem;
+    }
+
+    .recently-visited__items {
+        gap: 1.5rem;
+    }
+}

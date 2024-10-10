@@ -1,7 +1,11 @@
-
 header {
     padding: 1rem 1.5rem;
     position: relative;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
 }
 
 header nav {
@@ -11,7 +15,7 @@ header nav {
 }
 
 /* main logo on the left */
-.container, 
+.container,
 .nav-logo__mobile {
     display: flex;
     align-items: center;
@@ -44,14 +48,30 @@ header nav {
     display: none;
 }
 
-.container.nav-menu a {
-    text-decoration: none;
+.container.nav-menu {
     text-transform: uppercase;
     padding: .5rem;
     color: black;
     font-size: 1rem;
 }
 
+.container.nav-menu label {
+    cursor: pointer;
+}
+
+.menu-button-desk {
+    display: none;
+}
+
+.menu-button-desk:checked~.menu-content {
+    display: block;
+    left: initial;
+}
+
+.container.nav-menu .menu-content__item:hover {
+    background-image: linear-gradient(35deg, var(--color-bg-gradient-primary), var(--color-bg-gradient-secondary));
+    color: var(--color-font-base);
+}
 
 /* Menu hamburger */
 .menu-button {
@@ -69,7 +89,7 @@ header nav {
     z-index: 100;
 }
 
-.menu-button:checked ~ .menu-content {
+.menu-button:checked~.menu-content {
     display: block;
 }
 
@@ -93,6 +113,7 @@ header nav {
 
 
 @media screen and (min-width: 1024px) {
+
     .container.nav-logo .nav-logo__mobile,
     .container.nav-icons .favoritos {
         display: none;
