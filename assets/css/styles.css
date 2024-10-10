@@ -22,14 +22,9 @@
 
 }
 
-.wrapper {
-    max-width: 1728px;
-    margin: auto;
-    box-shadow: 4px 4px 22px 18px rgba(0, 0, 0, 0.165);
-}
-
 .content-wrapper {
-    max-width: 896px;
+    width: 95%;
+    max-width: 1512px;
     margin: auto;
 }
 
@@ -42,4 +37,10 @@ body {
     background-color: var(--color-bg-body);
     font-family: "Poppins", sans-serif;
     font-weight: 400;
+}
+
+@media screen and (min-width: 600px) {
+    .content-wrapper {
+        width: 85%;
+    }
 }

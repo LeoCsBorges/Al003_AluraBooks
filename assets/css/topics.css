@@ -1,4 +1,8 @@
 /* TOPICOS VISITADOS RECENTEMENTE */
+.content-wrapper.recently-visited-wrapper {
+    max-width: 1024px;
+}
+
 .recently-visited {
     padding-block: 1.5rem;
     text-align: center;
@@ -46,5 +50,16 @@
 
     .recently-visited__items {
         gap: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .recently-visited {
+        padding-block: 4rem 5rem;
+    }
+
+    .recently-visited__title {
+        margin-bottom: 3rem;
+        font-size: 2rem;
     }
 }

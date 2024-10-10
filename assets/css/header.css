@@ -9,6 +9,8 @@ header a {
 }
 
 header nav {
+    max-width: 1728px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,6 +43,7 @@ header nav {
     color: black;
     font-size: 1.875rem;
     font-family: "Josefin Sans", sans-serif;
+    margin-top: .75rem;
 }
 
 /* central menu links */
@@ -53,6 +56,7 @@ header nav {
     padding: .5rem;
     color: black;
     font-size: 1rem;
+    user-select: none;
 }
 
 .container.nav-menu label {
@@ -72,6 +76,11 @@ header nav {
     background-image: linear-gradient(35deg, var(--color-bg-gradient-primary), var(--color-bg-gradient-secondary));
     color: var(--color-font-base);
 }
+
+.container.nav-icons a > p {
+    display: none;
+}
+
 
 /* Menu hamburger */
 .menu-button {
@@ -113,7 +122,6 @@ header nav {
 
 
 @media screen and (min-width: 1024px) {
-
     .container.nav-logo .nav-logo__mobile,
     .container.nav-icons .favoritos {
         display: none;
@@ -130,5 +138,25 @@ header nav {
 
     .container.nav-icons {
         gap: 3rem;
+    }
+}
+
+
+@media screen and (min-width: 1728px) {
+    .container.nav-menu {
+        flex-grow: 1;
+        margin-left: 4rem;
+    }
+
+    .container.nav-icons a {
+        display: flex;
+        align-items: center;
+    }
+
+    .container.nav-icons a > p {
+        display: block;
+        color: black;
+        font-size: 1.25rem;
+        font-weight: 400;
     }
 }

@@ -21,9 +21,9 @@
 }
 
 .search__input {
-    position: relative;
     max-width: 476px;
     margin: auto;
+    position: relative;
 }
 
 .search__input input {
@@ -58,7 +58,6 @@
 @media screen and (min-width: 1024px) {
     .search {
         padding: 5.25rem 1.5rem;
-        margin-bottom: 3rem;
     }
     
     .search__title {
@@ -73,5 +72,15 @@
     .search__input img {
         top: 16px;
         left: 18%;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .search__title {
+        font-size: 2.25rem;
+    }
+
+    .search__input {
+        max-width: 564px;
     }
 }

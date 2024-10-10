@@ -1,7 +1,10 @@
 /* FIQUE POR DENTRO DAS NOVIDADES */
 .contact {
-    padding: 1.5rem;
     color: var(--color-bg-gradient-primary);
+}
+
+.content-wrapper.contact-wrapper {
+    margin: 1.5rem auto 2rem auto;
 }
 
 .contact__title {
@@ -49,6 +52,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .content-wrapper.contact-wrapper {
+        margin: 2rem auto 3rem auto;
+    }
+
     .contact__title {
         font-size: 1.5rem;
         line-height: 2rem;
@@ -56,7 +63,6 @@
     }
 
     .contact-wrapper { 
-        padding: 1rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -74,5 +80,19 @@
 
     .contact__input img {
         top: 16px;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .content-wrapper.contact-wrapper {
+        margin: 4rem auto;
+    }
+
+    .contact__content {
+        max-width: 50%;
+    }
+
+    .contact__title {
+        font-size: 2rem;
     }
 }

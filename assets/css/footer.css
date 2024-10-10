@@ -1,12 +1,18 @@
 /* RODAPE */
 footer {
     padding: 1rem 1.5rem 1.5rem 1.5rem;
-    border-top: 1px solid #858585;
+    border-top: 1px solid #85858579;
+    background-color: #F9F9F9;
 }
 
 footer a {
     text-decoration: none;
     color: inherit;
+}
+
+.footer-content {
+    max-width: 1512px;
+    margin: auto;
 }
 
 .footer-subtitle {
@@ -54,5 +60,15 @@ footer a {
     .footer-container.footer-mobile {
         font-size: 1.5rem;
     }
-    
+}
+
+@media screen and (min-width: 1728px) {
+    .footer-container {
+        border-left: 1px solid #85858570;
+        padding-left: 1.25rem;
+    }
+
+    .footer-container.footer-container.footer-mobile {
+        border-left: none;
+    }
 }
