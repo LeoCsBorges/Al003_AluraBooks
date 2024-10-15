@@ -36,15 +36,48 @@
     background-color: var(--color-font-secondary);
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-    display: none;
-    color: var(--color-font-base);
-    padding: .25rem;
-    border-radius: 20%;
+.swiper {
+    position: relative;
+}
+
+.swiper-btn-prev {
+    width: max-content;
+    color: white;
+    cursor: pointer;
+    font-size: 3rem;
+    line-height: 0;
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
     background-color: var(--color-font-secondary);
-    opacity: .75;
     user-select: none;
+    position: absolute;
+    top: calc(50%); 
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 50;
+    opacity: .9;
+    display: none;
+}
+
+.swiper-btn-next {
+    width: max-content;
+    color: white;
+    cursor: pointer;
+    font-size: 3rem;
+    line-height: 0;
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    background-color: var(--color-font-secondary);
+    user-select: none;
+    position: absolute;
+    top: calc(50%); 
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 50;
+    opacity: .9;
+    display: none;
 }
 
 
@@ -139,9 +172,11 @@
         padding-block: 3rem;
     }
 
-    .swiper-button-next,
-    .swiper-button-prev {
-        display: block;
+    .swiper-btn-next,
+    .swiper-btn-prev {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .card-wrapper {
@@ -159,6 +194,13 @@
 
 @media screen and (min-width: 1728px) {
     .swiper-card__header__title {
+        font-size: 2rem;
+    }
+
+    .swiper-btn-next,
+    .swiper-btn-prev {
+        height: 36px;
+        width: 36px;
         font-size: 2rem;
     }
 
